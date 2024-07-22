@@ -9,6 +9,8 @@ an `UploadSet` object and upload your files to it.
 :license:   MIT/X11, see LICENSE for details
 """
 
+from werkzeug.utils import secure_filename
+from werkzeug.datastructures import FileStorage
 import sys
 
 PY3 = sys.version_info[0] == 3
